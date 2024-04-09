@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breuer Web Development</title>
+    <link rel="icon" type="image/x-icon" href="/computer-solid-black.svg">
+    <link href="output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body data-theme="cupcake" class="flex flex-col min-h-screen overflow-x-hidden">
+      
+  
+    <div class="navbar bg-base-100 overflow-x-hidden">
+        <img class="h-8" src="/computer-solid-black.svg">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-2xl dangrek-regular max-sm:hidden">Breuer Web Development</a><span class="btn btn-ghost text-2xl dangrek-regular sm:hidden">Breuer Web Dev</span>
+        </div>
+        <div>
+            <input type="checkbox" value="cupcake" class="toggle theme-controller bg-amber-300 border-sky-400 [--tglbg:theme(colors.sky.500)] checked:bg-blue-300 checked:border-blue-800 checked:[--tglbg:theme(colors.blue.900)] row-start-1 col-start-1 col-span-2"/>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+          </button>
+        </div>
+    </div>
+      
+      
+    <div class="flex-grow relative h-screen bg-black overflow-hidden">
+        <!-- Video Background -->
+        <video class="absolute w-full h-full object-cover opacity-80 z-10" src="/drone.mp4" type="video/mp4" autoplay loop muted playsinline></video>
+        
+        <!-- Text Overlay -->
+        <div class="absolute inset-0 flex flex-col justify-center text-center z-30">
+          <h1 class="dangrek-regular text-7xl text-white">Bringing Your Ideas To Life</h1>
+        </div>
+      </div>
+      
+      
+    <div id="about_section" class="h-screen">
+        <div class="h-screen flex flex-col justify-center items-center gap-16 text-5xl dangrek-regular">
+          <h1 data-aos="fade-left"
+              data-aos-duration="500" class="text-7xl">I am a...</h1>
+          <h1 data-aos="fade-right"
+              data-aos-duration="600">Developer</h1>
+          <h1 data-aos="fade-left"
+              data-aos-duration="700">Desginer</h1>
+          <h1 data-aos="fade-right"
+              data-aos-duration="800">Tech Enthusiast</h1>
+          <h1 data-aos="fade-left"
+              data-aos-duration="900">Artist</h1>
+        </div>
+    </div>
+
+    <div class="divider"></div> <!--Divider-->
+      
+
+    <div id="frontend_skills_section" class="h-screen">
+        <div class="h-screen flex flex-col justify-center items-center gap-16 text-5xl dangrek-regular">
+          <h1>Frontend Dev skills</h1>
+          <div class="grid grid-cols-2 gap-10 text-center">
+            <div data-aos="flip-left" data-aos-duration="500" class="p-2 max-h-48 over:cursor-pointer hover:opacity-50">
+              <img src="/frontend_svgs/html.svg" alt="Image 1" class="w-full h-auto max-h-full">
+              <h1 id="frontend_text">HTML</h1>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="1000" class="p-2 max-h-48 hover:cursor-pointer hover:opacity-50">
+              <img src="/frontend_svgs/css.svg" alt="Image 2" class="w-full h-auto max-h-full">
+              <h1 id="frontend_text">CSS</h1>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="1000" class="p-2 max-h-48 hover:cursor-pointer hover:opacity-50">
+              <img src="/frontend_svgs/javascript.svg" alt="Image 3" class="w-full h-auto max-h-full">
+              <h1 id="frontend_text">Javascript</h1>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="1500" class="p-2 max-h-48 hover:cursor-pointer hover:opacity-50">
+              <img src="/frontend_svgs/vuejs.svg" alt="Image 4" class="w-full h-auto max-h-full">
+              <h1 id="frontend_text">Vue.JS</h1>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="500" class="p-2 mt-auto max-h-48 items-center flex flex-col hover:cursor-pointer hover:opacity-50">
+              <img src="/frontend_svgs/tailwind.svg" alt="Image 5" class="w-full h-auto max-h-full">
+              <h1 id="frontend_text">Tailwind CSS</h1>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="1000" class="p-2 max-h-48 hover:cursor-pointer hover:opacity-50">
+              <img src="/frontend_svgs/bootstrap.svg" alt="Image 6" class="w-full h-auto max-h-full">
+              <h1 id="frontend_text">Bootstrap</h1>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+       
+    <div class="divider"></div> <!--Divider-->
+
+      
+
+    <div id="backend_skills_section" class="h-screen text-5xl dangrek-regular flex flex-col items-center justify-center">
+      <div class="mb-20">
+        <h1>Backend Dev skills</h1>
+      </div>
+      <div class="flex flex-col justify-center items-center space-y-10">
+        <div class="text-center">
+          <h1 data-aos="fade-right" data-aos-duration="500" class="mb-4">Integration with:</h1>
+          <div class="grid grid-cols-2 gap-4">
+            <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-col items-center p-4">
+              <img src="/backend_svgs/database-icon.svg" class="h-28 mb-2">
+              <h1 id="backend_text">Databases</h1>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000"  class="flex flex-col items-center p-4">
+              <img src="/backend_svgs/api-icon.svg" class="h-28 mb-2">
+              <h1 id="backend_text">APIs</h1>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1500" class="flex flex-col items-center p-4">
+              <img src="/backend_svgs/computer-internet-network-icon.svg" class="h-28 mb-2">
+              <h1 id="backend_text">Servers</h1>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1500"  class="flex flex-col items-center p-4">
+              <img src="/backend_svgs/lock-icon.svg" class="h-28 mb-2">
+              <h1 id="backend_text">Security</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="divider"></div> <!--Divider-->
+
+    <div id="backend_skills_section" class="h-screen text-5xl dangrek-regular flex flex-col items-center justify-center text-center">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"class="mb-20">
+          <h1>Further Backend Support:</h1>
+        </div>
+        <div class="grid grid-cols-2 gap-10">
+          <div data-aos="fade-up" data-aos-duration="2000" class="flex flex-col items-center p-4">
+            <img src="/backend_svgs/mysql-icon.svg" class="h-28 mb-2">
+            <h1 id="backend_text" class="text-center">MySQL</h1>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2000" class="flex flex-col items-center p-4">
+            <img src="/backend_svgs/php-programming-language-icon.svg" class="h-28 mb-2">
+            <h1 id="backend_text" class="text-center">PHP</h1>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="flex flex-col items-center p-4">
+            <img src="/backend_svgs/mongodb-icon.svg" class="h-28 mb-2">
+            <h1 id="backend_text" class="text-center">MongoDB</h1>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="2500" class="flex flex-col items-center p-4">
+            <img src="/backend_svgs/node-js-icon.svg" class="h-28 mb-2">
+            <h1 id="backend_text" class="text-center">Node.JS</h1>
+          </div>
+        </div>
+    </div>
+  
+    <div class="divider"></div> <!--Divider-->
+    
+    <div class="h-screen flex flex-col justify-center items-center gap-4">
+      <div class="text-5xl dangrek-regular">Projects</div>
+      <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine" class="card w-96 bg-base-100 shadow-xl">
+        <figure><img src="/ccg_website.png" alt="CCG Official Esports Website" /></figure>
+        <div class="card-body p-2">
+          <h2 class="card-title">CCG Official Esports</h2>
+          <p>Fully designed and developed. Front and Backend support.</p>
+          <div class="card-actions justify-end">
+            <a href="https://coolcatgang.netlify.app/dist/index.html"><button class="btn btn-primary">Check it out</button></a>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine" class="card w-96 bg-base-100 shadow-xl">
+        <figure><video src="/thePortal.mov" alt="CCG Official Esports Website" type="video/mov" autoplay loop muted playsinline ></video></figure>
+        <div class="card-body p-2">
+          <h2 class="card-title">The Portal</h2>
+          <p>Fully designed and developed. Frontend support.</p>
+          <div class="card-actions justify-end">
+            <a href="https://bbreuer.github.io/portal/"><button class="btn btn-primary">Check it out</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <nav>
+          <h6 class="footer-title dangrek-regular">Services</h6> 
+          <a class="link link-hover dangrek-regular">Web Development</a>
+          <a class="link link-hover dangrek-regular">Web Hosting setup</a>
+          <a class="link link-hover dangrek-regular">Web Design</a>
+          <a class="link link-hover dangrek-regular">Web Managment</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title dangrek-regular">Personal</h6> 
+          <a class="link link-hover dangrek-regular">About me</a>
+          <a class="link link-hover dangrek-regular">Contact</a>
+        </nav>
+    </footer>
+      
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
