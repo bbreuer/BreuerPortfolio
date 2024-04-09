@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .dangrek-regular {
     font-family: "Dangrek", sans-serif;
     font-weight: 400;
