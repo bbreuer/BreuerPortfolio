@@ -1,23 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
-        const toggle = document.getElementById('theme-toggle');
-        const body = document.body;
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
 
-        toggle.addEventListener('change', function() {
-            // Check if the toggle is checked
-            if (toggle.checked) {
-                // Set data-theme attribute to dark if checked
-                body.setAttribute('data-theme', 'dark');
-            } else {
-                // Set data-theme attribute to cupcake if not checked
-                body.setAttribute('data-theme', 'cupcake');
-            }
-        });
+    // Function to apply the theme
+    function applyTheme(theme) {
+        body.setAttribute('data-theme', theme);
+        toggle.checked = (theme === 'dark');
+    }
 
-        // Initial theme check
-        if (body.getAttribute('data-theme') === 'dark') {
-            toggle.checked = true;
+    // Event listener for changing the theme
+    toggle.addEventListener('change', function() {
+        if (toggle.checked) {
+            // Set data-theme attribute to dark if checked
+            localStorage.setItem('theme', 'dark');  // Save preference to localStorage
+            applyTheme('dark');
         } else {
-            body.setAttribute('data-theme', 'cupcake');
-            toggle.checked = false;
+            // Set data-theme attribute to cupcake if not checked
+            localStorage.setItem('theme', 'cupcake');  // Save preference to localStorage
+            applyTheme('cupcake');
         }
     });
+
+    // Check the saved theme from localStorage and apply it
+    const savedTheme = localStorage.getItem('theme') || 'cupcake';
+    applyTheme(savedTheme);
+});
