@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 </head>
-<body class="flex flex-col min-h-screen overflow-x-hidden">
+<body class="theme-cupcake flex flex-col min-h-screen overflow-x-hidden">
       
   
     <div class="navbar bg-base-100 overflow-x-hidden">
@@ -21,7 +21,9 @@
           <a class="btn btn-ghost text-2xl dangrek-regular max-sm:hidden">Breuer Web Development</a><span class="btn btn-ghost text-2xl dangrek-regular sm:hidden">Breuer Web Dev</span>
         </div>
         <div>
-            <input type="checkbox" value="cupcake" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" class=" bg-amber-300 border-sky-400 [--tglbg:theme(colors.sky.500)] checked:bg-blue-300 checked:border-blue-800 checked:[--tglbg:theme(colors.blue.900)] row-start-1 col-start-1 col-span-2"/>
+          <label class="cursor-pointer label">
+            <input type="checkbox" class="toggle toggle-primary" id="theme-toggle" data-toggle-theme="dark,cupcake" data-act-class="ACTIVECLASS">
+          </label>
         </div>
         <div class="flex-none">
           <button class="btn btn-square btn-ghost">
@@ -29,10 +31,7 @@
           </button>
         </div>
     </div>
-
-    <button class="border-2 m-4 border-white" data-set-theme="dark" data-act-class="ACTIVECLASS">dark</button>
-    <button class="border-2 m-4 border-white" data-set-theme="light" data-act-class="ACTIVECLASS">light</button>
-    <button class="border-2 m-4 border-white" data-set-theme="cupcake">cupcake</button>
+    
       
       
     <div class="flex-grow relative h-screen bg-black overflow-hidden">
@@ -222,9 +221,9 @@
     <script>
         AOS.init();
     </script>
+    <script src="/node_modules/theme-change/index.min.js"></script>
     <script>
-      themeChange(false);
-      // false parameter is to prevent auto read from localStorage
+      themeChange(true); // This script call now handles theme switching automatically
     </script>
 </body>
 </html>
