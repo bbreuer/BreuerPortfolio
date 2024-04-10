@@ -3,17 +3,6 @@
 @tailwind utilities;
 
 
-:root {
-  --my-color: #fff;
-  /* or any other variables/style */
-}
-[data-theme='dark'] {
-  --my-color: #000;
-}
-[data-theme='light'] {
-  --my-color: #ffffff;
-}
-
 .dangrek-regular {
     font-family: "Dangrek", sans-serif;
     font-weight: 400;

@@ -29,6 +29,10 @@
           </button>
         </div>
     </div>
+
+    <button data-set-theme="dark" data-act-class="ACTIVECLASS">dark</button>
+    <button data-set-theme="light" data-act-class="ACTIVECLASS">light</button>
+    <button data-set-theme="cupcake">cupcake</button>
       
       
     <div class="flex-grow relative h-screen bg-black overflow-hidden">
@@ -217,6 +221,10 @@
     <script src="script.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+      themeChange(false);
+      // false parameter is to prevent auto read from localStorage
     </script>
 </body>
 </html>
