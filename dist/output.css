@@ -1849,6 +1849,10 @@ html {
   grid-row-start: 1;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1997,9 +2001,18 @@ html {
   border-radius: 1.5rem;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-sky-400 {
   --tw-border-opacity: 1;
   border-color: rgb(56 189 248 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-amber-300 {
@@ -2093,19 +2106,6 @@ html {
 
 .\[--tglbg\:theme\(colors\.sky\.500\)\] {
   --tglbg: #0ea5e9;
-}
-
-:root {
-  --my-color: #fff;
-  /* or any other variables/style */
-}
-
-[data-theme='dark'] {
-  --my-color: #000;
-}
-
-[data-theme='light'] {
-  --my-color: #ffffff;
 }
 
 .dangrek-regular {
