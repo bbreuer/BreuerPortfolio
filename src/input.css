@@ -31,10 +31,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
+}
 
-  .layer1{
-    background-image: url('/blob-scene-haikei.svg');
-  }
+
+.layer1 {
+    background-image: url('/stacked-waves-haikei-cupcake.svg');
+}
+
+.layer1-dark {
+    background-image: url('/stacked-waves-haikei-dark.svg');
+}
+
+
 
  
