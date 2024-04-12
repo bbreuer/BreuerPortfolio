@@ -38,6 +38,14 @@
     background-image: url('/stacked-waves-haikei-cupcake.svg');
 }
 
+.layer1-bg{
+  background-color: #42c6d3;
+}
+
+.layer1-reversebg{
+  background-image: url('/stacked-waves-haikei-reverse-cupcake.svg');
+}
+
 .layer1-dark {
     background-image: url('/stacked-waves-haikei-dark.svg');
 }
